@@ -1,0 +1,21 @@
+.header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.header-h1 {
+    position: absolute;
+    text-align: center;
+    font-weight: normal;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.header-img {
+    justify-self: auto;
+    max-width: 100%;
+}

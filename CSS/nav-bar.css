@@ -1,0 +1,47 @@
+.navbar {
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: #fff;
+    height: 4rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-list {
+    width: 100%;
+    font-size: 1.3rem;
+    display: grid;
+    align-items: stretch;
+    justify-items: stretch;
+    grid-template-columns: 30fr repeat(3, auto) 10px;
+    column-gap: 2rem;
+    grid-template-rows: 1.5rem;
+}
+
+.navbar-item {
+    display: inline-block;
+}
+
+.navbar-link {
+    font-style: normal;
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: 0.1s;
+    border-radius: 5px;
+}
+
+.navbar-link:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 600px) {
+    .hide-item {
+        display: none;
+    }
+}
