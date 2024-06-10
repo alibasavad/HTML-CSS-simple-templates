@@ -1,0 +1,29 @@
+.menu {
+    transition: 1s;
+    display: none;
+    z-index: 5;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    min-width: 316px;
+    width: 40%;
+    background-color: #fff;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.menu-link {
+    display: block;
+    font-size: 1.5rem;
+    font-family: serif;
+    color: #000;
+    text-decoration: none;
+    transition: 0.1s;
+    padding: 1rem 1rem;
+}
+.menu-link:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 5px;
+}
