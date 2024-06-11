@@ -1,0 +1,10 @@
+:root {
+    --color-bg: #eee;
+    --color-font-primary: #000;
+    --color-font-secondary: #fff;
+    --colot-primary: #ccc;
+    --color-secondary: #111;
+    --color-post-bg: #fff;
+    --color-footer: #666;
+    --color-shadow: rgba(0, 0, 0, 0.2);
+}

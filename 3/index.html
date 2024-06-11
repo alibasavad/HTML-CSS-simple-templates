@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./CSS/normalize.css" />
+        <link id="css-color" rel="stylesheet" href="./CSS/color_day.css" />
+        <link rel="stylesheet" href="./CSS/index.css" />
+
+        <script>
+            function changeTheme() {
+                let sun = document.getElementById("theme-sun");
+                let moon = document.getElementById("theme-moon");
+                let color = document.getElementById("css-color");
+                if (sun.style.display == "none") {
+                    color.href = "./CSS/color_day.css";
+                    sun.style.display = "inline-block";
+                    moon.style.display = "none";
+                } else {
+                    color.href = "./CSS/color_night.css";
+                    sun.style.display = "none";
+                    moon.style.display = "inline-block";
+                }
+            }
+        </script>
+
+        <title>Third Template</title>
+    </head>
+    <body>
+        <div class="theme" onclick="changeTheme()">
+            <img
+                src="./public/image/sun.png"
+                alt="theme changer"
+                id="theme-sun"
+                class="theme-img sun"
+            />
+            <img
+                src="./public/image/moon.png"
+                alt="theme changer"
+                class="theme-img moon none"
+                id="theme-moon"
+            />
+        </div>
+
+        <header class="header">
+            <h1 class="header-h1">MY BLOG</h1>
+            <p class="header-p">
+                Welcome to the blog of <span class="highlight">unknown</span>
+            </p>
+        </header>
+
+        <main class="body">
+            <div class="posts">
+                <div class="post">
+                    <img
+                        src="./public/image/woods.jpg"
+                        alt=""
+                        class="post-img"
+                    />
+                    <div class="post-text">
+                        <h2 class="post-h2">BLOG ENTRY</h2>
+                        <h3 class="post-h3">
+                            Title description, April 2, 2014
+                        </h3>
+                        <p class="post-p">
+                            Mauris neque quam, fermentum ut nisl vitae,
+                            convallis maximus nisl. Sed mattis nunc id lorem
+                            euismod placerat. Vivamus porttitor magna enim, ac
+                            accumsan tortor cursus at. Phasellus sed ultricies
+                            mi non congue ullam corper. Praesent tincidunt sed
+                            tellus ut rutrum. Sed vitae justo condimentum, porta
+                            lectus vitae, ultricies congue gravida diam non
+                            fringilla.
+                        </p>
+                        <div class="post-footer">
+                            <a class="post-link">Read More</a>
+                            <div class="comment">
+                                Comments
+                                <span class="highlight comment-highlight"
+                                    >25</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <img
+                        src="./public/image/bridge.jpg"
+                        alt=""
+                        class="post-img"
+                    />
+                    <div class="post-text">
+                        <h2 class="post-h2">BLOG ENTRY</h2>
+                        <h3 class="post-h3">
+                            Title description, April 2, 2014
+                        </h3>
+                        <p class="post-p">
+                            Mauris neque quam, fermentum ut nisl vitae,
+                            convallis maximus nisl. Sed mattis nunc id lorem
+                            euismod placerat. Vivamus porttitor magna enim, ac
+                            accumsan tortor cursus at. Phasellus sed ultricies
+                            mi non congue ullam corper. Praesent tincidunt sed
+                            tellus ut rutrum. Sed vitae justo condimentum, porta
+                            lectus vitae, ultricies congue gravida diam non
+                            fringilla.
+                        </p>
+                        <div class="post-footer">
+                            <a class="post-link">Read More</a>
+                            <div class="comment">
+                                Comments <span class="highlight">25</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="side">
+                <div class="post about-me">
+                    <img
+                        src="./public/image/avatar_g.jpg"
+                        alt=""
+                        class="post-img"
+                    />
+                    <div class="post-text">
+                        <h2 class="post-h2">My Name</h2>
+                        <p class="post-p">
+                            Just me, myself and I, exploring the universe of
+                            uknownment. I have a heart of love and a interest of
+                            lorem ipsum and mauris neque quam blog. I want to
+                            share my world with you.
+                        </p>
+                    </div>
+                </div>
+                <div class="popular">
+                    <h2 class="popular-h2">Popular Posts</h2>
+                    <div class="popular-item">
+                        <img
+                            src="./public/image/skies.jpg"
+                            alt=""
+                            class="popular-img"
+                        />
+                        <h3 class="popular-h3">Lorem</h3>
+                        <p class="popular-p">Sed mattis nunc</p>
+                    </div>
+                    <div class="popular-item">
+                        <img
+                            src="./public/image/rock.jpg"
+                            alt=""
+                            class="popular-img"
+                        />
+                        <h3 class="popular-h3">Lorem</h3>
+                        <p class="popular-p">Sed mattis nunc</p>
+                    </div>
+                    <div class="popular-item">
+                        <img
+                            src="./public/image/gondol.jpg"
+                            alt=""
+                            class="popular-img"
+                        />
+                        <h3 class="popular-h3">Lorem</h3>
+                        <p class="popular-p">Sed mattis nunc</p>
+                    </div>
+                    <div class="popular-item">
+                        <img
+                            src="./public/image/workshop.jpg"
+                            alt=""
+                            class="popular-img"
+                        />
+                        <h3 class="popular-h3">Lorem</h3>
+                        <p class="popular-p">Sed mattis nunc</p>
+                    </div>
+                </div>
+                <div class="popular tags">
+                    <h2 class="popular-h2 tag-h2">Tags</h2>
+                    <div class="post-text">
+                        <p class="tag-selected">Travel</p>
+                        <p class="tag">New York</p>
+                        <p class="tag">Dinner</p>
+                        <p class="tag">Salmon</p>
+                        <p class="tag">France</p>
+                        <p class="tag">New York</p>
+                        <p class="tag">Dinner</p>
+                        <p class="tag">Salmon</p>
+                        <p class="tag">France</p>
+                        <p class="tag">New York</p>
+                        <p class="tag">Dinner</p>
+                        <p class="tag">Salmon</p>
+                        <p class="tag">France</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <button class="footer-btn disabled" disabled>Previous</button
+            ><button class="footer-btn">Next</button>
+        </footer>
+    </body>
+</html>
